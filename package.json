@@ -1,0 +1,32 @@
+{
+  "name": "haiku-by-the-sea",
+  "version": "0.0.1",
+  "description": "Telegram Bot to post a daily Haiku poem to a channel",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r ./tests/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/AlanVerbner/haiku-by-the-sea.git"
+  },
+  "keywords": [
+    "haiku",
+    "telegram",
+    "bot"
+  ],
+  "author": "@AlanVerbner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlanVerbner/haiku-by-the-sea/issues"
+  },
+  "homepage": "https://github.com/AlanVerbner/haiku-by-the-sea#readme",
+  "devDependencies": {
+    "readme-md-generator": "0.6.4"
+  },
+  "engines": {
+    "npm": ">=5.5.0",
+    "node": ">=12.0.0"
+  },
+  "dependencies": {}
+}
