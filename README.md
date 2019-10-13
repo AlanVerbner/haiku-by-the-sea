@@ -61,6 +61,10 @@ Nope, but if you think there is a cool feature or anything you think it might be
 * Twitter: [@AlanVerbner](https://twitter.com/AlanVerbner)
 * Github: [@AlanVerbner](https://github.com/AlanVerbner)
 
+👤 **@Saldasoro (aka Cryptobaby)**
+
+* Twitter: [@AlanVerbner](https://twitter.com/Saldasoro)
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/AlanVerbner/haiku-by-the-sea/issues).
