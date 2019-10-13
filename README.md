@@ -20,7 +20,6 @@
 
 ## TODO
 
-- [ ] Add tests
 - [ ] Create the landing page with a link to the telegram channel
 
 ## Prerequisites

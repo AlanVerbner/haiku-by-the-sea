@@ -3,6 +3,11 @@
   "rules": {
     "quotes": ["error", "single"],
     "arrow-parens": "off",
-    "no-console": "off"
+    "no-console": "off",
+    "space-before-function-paren": "off"
+  },
+  "env": {
+    "node": true,
+    "mocha": true
   }
 }

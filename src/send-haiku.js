@@ -1,8 +1,7 @@
 'use strict';
 
-const Telegraf = require('telegraf');
 const moment = require('moment');
-const haikus = require('./haikus-db.json');
+const haikus = require('../haikus-db.json');
 const { formatHaiku, haikuIndex } = require('./haiku');
 
 /**
@@ -24,19 +23,17 @@ const getTodaysHaiku = (haikusToPick, index) => {
   return formatHaiku(todaysHaiku);
 };
 
-const doRun = async (BOTTOKEN, TELEGRAMCHANNEL, STARTDATE) => {
+const doRun = async (sendTelegramMessage, TELEGRAMCHANNEL, STARTDATE) => {
   console.log('[doRun] Getting todays Haiku');
   const todaysHaiku = getTodaysHaiku(haikus, haikuIndex(STARTDATE, moment()));
   console.log('[doRun] Todays Haiky is', todaysHaiku);
-  const bot = new Telegraf(BOTTOKEN);
   console.log(`[doRun] Sending haiku to channel ${TELEGRAMCHANNEL}`);
   return (
-    bot.telegram
+    // eslint-disable-next-line camelcase
+    sendTelegramMessage(TELEGRAMCHANNEL, todaysHaiku, {
       // eslint-disable-next-line camelcase
-      .sendMessage(TELEGRAMCHANNEL, todaysHaiku, {
-        // eslint-disable-next-line camelcase
-        parse_mode: 'HTML'
-      })
+      parse_mode: 'HTML'
+    })
   );
 };
 

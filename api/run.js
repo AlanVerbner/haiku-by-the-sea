@@ -1,8 +1,8 @@
 'use strict';
 
 /* eslint-disable no-magic-numbers */
-
-const doRun = require('../send-haiku');
+const sendTelegramMessage = require('../src/telegram');
+const doRun = require('../src/send-haiku');
 
 const fromBase64 = b64 => new Buffer(b64, 'base64').toString();
 
@@ -11,7 +11,7 @@ module.exports = async (req, res) => {
     const { BOTTOKEN, TELEGRAMCHANNEL, STARTDATE } = process.env;
     console.log('About to run the main function');
     const result = await doRun(
-      fromBase64(BOTTOKEN),
+      sendTelegramMessage(fromBase64(BOTTOKEN)),
       fromBase64(TELEGRAMCHANNEL),
       fromBase64(STARTDATE)
     );
