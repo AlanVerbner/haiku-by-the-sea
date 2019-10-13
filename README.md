@@ -12,8 +12,16 @@
 </p>
 
 > Telegram Bot to post a daily Haiku poem to a channel
+> 
+> This is a simple and stupid bot I made (while bored and recovering at home) inspired by daily Haikus sent to me by [Seba](https://twitter.com/Saldasoro).
+
 
 ### 🏠 [Homepage](https://github.com/AlanVerbner/haiku-by-the-sea#readme)
+
+## TODO
+
+- [ ] Add tests
+- [ ] Create the landing page with a link to the telegram channel
 
 ## Prerequisites
 
@@ -31,6 +39,20 @@ npm install
 ```sh
 npm run test
 ```
+
+## FAQ
+
+1. Are the Haikus configurable?
+
+Well, sort of. Basically I wanted to avoid using any DB or anything else besides a few JS lines. To do so, I decided to store the Haikus in a text file and read one for each day based on the date I deployed this. So, for example, if first deployment was done 2019-10-23, the Haiku #3 will be sent on 2019-10-25.
+
+2. Could have I done this better?
+
+Yeah, of course, but I didn't want to spend more than a couple of hours working on it.
+
+3. Are you willing to improve it?
+
+Nope, but if you think there is a cool feature or anything you think it might be worth adding, [just let me know](#Contributing).
 
 ## Author
 
