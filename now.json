@@ -1,0 +1,9 @@
+{
+  "env": {
+    "BOTTOKEN": "@bottoken",
+    "TELEGRAMCHANNEL": "@telegramchannel",
+    "STARTDATE": "@startdate"
+  }
+}
+
+
