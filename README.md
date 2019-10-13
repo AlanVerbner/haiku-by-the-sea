@@ -3,6 +3,7 @@
   <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
   <img src="https://img.shields.io/badge/npm-%3E%3D5.5.0-blue.svg" />
   <img src="https://img.shields.io/badge/node-%3E%3D12.0.0-blue.svg" />
+  <img src="https://circleci.com/gh/AlanVerbner/haiku-by-the-sea.svg?style=svg">
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
@@ -37,6 +38,11 @@ npm install
 
 ```sh
 npm run test
+```
+## Coverage 
+
+```sh
+npm run coverage
 ```
 
 ## FAQ

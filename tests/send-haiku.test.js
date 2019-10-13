@@ -29,12 +29,13 @@ describe('Send Haiku', () => {
     expect(extra).to.eql(EXTRA);
   });
 
-  it('Should send the last Haiku if start date is haikus array length days in the past', async () => {
+  it('Should be able to send the last Haiku', async () => {
     const [channel, msg, extra] = await sendHaiku(
       sendTelegramMessageStub,
       TELEGRAMCHANNEL,
       moment()
-        // Last item in the list. FIXME: We have a hard-coded dependency `moment()` inside teh function that should changed
+        // Last item in the list.
+        // FIXME: We have a hard-coded dependency `moment()` inside teh function that should changed
         .subtract(haikus.length - 1, 'days')
         .format('YYYY-MM-DD')
     );
