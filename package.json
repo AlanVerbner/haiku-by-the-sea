@@ -1,6 +1,6 @@
 {
   "name": "haiku-by-the-sea",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Telegram Bot to post a daily Haiku poem to a channel",
   "main": "index.js",
   "scripts": {
