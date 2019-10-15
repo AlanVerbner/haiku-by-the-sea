@@ -17,7 +17,7 @@
 > This is a simple and stupid bot I made (while bored and recovering at home) inspired by daily Haikus sent to me by [Seba](https://twitter.com/Saldasoro).
 
 
-### 🏠 [Homepage](https://github.com/AlanVerbner/haiku-by-the-sea#readme)
+### 🏠 [Homepage](https://alanverbner.github.io/haiku-by-the-sea)
 
 ## TODO
 
