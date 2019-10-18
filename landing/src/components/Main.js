@@ -196,6 +196,14 @@ class Main extends React.Component {
             <b>Is it free?</b> Yes, 100% free. This is a present from me to you.
           </p>
           <p>
+            <b>Are the Haikus only in Enlgish?</b>Yes. I have no plans to add
+            another one soon.
+          </p>
+          <p>
+            <b>At what time will I receive the Haikus?</b>Everyday at 12 UTC
+            (London time).
+          </p>
+          <p>
             <b>Are you tracking any information?</b> No, not at all. Neither the
             bot nor this app has any kind of tracker. I don't care about that, I
             just want to share this beautiful poems to anyone willing to read

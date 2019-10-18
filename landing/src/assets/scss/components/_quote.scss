@@ -9,7 +9,7 @@
 .blockquote {
     position: relative;
 //    font-family: 'Barlow Condensed', sans-serif;
-    max-width: 620px;
+    //max-width: 620px;
     //margin: 5px auto;
     align-self: center;
 }
@@ -18,18 +18,19 @@
 .blockquote h1 {
     //font-family: 'Abril Fatface', cursive;
     position: relative; /* for pseudos */
-    color: #e74848;
+    color: #F05050;
     font-size: 1.8rem;
     font-weight: normal;
     line-height: 1;
     margin: 0;
-    border: 2px solid #fff;
-    border: solid 2px;
+    //border: 2px solid #fff;
+    //border: solid 2px;
     border-radius:20px;
     padding: 25px;
 }
 
 /* Blockquote right double quotes */
+/*
 .blockquote h1:after {
     content:"";
     position: absolute;
@@ -52,7 +53,7 @@
     bottom: -3px;
     left: 50px;
     z-index: 2;
-}
+} */
 
 /* increase header size after 600px */
 @media all and (min-width: 600px) {
@@ -66,7 +67,7 @@
 /* Blockquote subheader */
 .blockquote h4 {
     position: relative;
-    color: #ffffff;
+    color: #F05050;
     font-size: 0.7rem;
     font-weight: 400;
     line-height: 1.2;

@@ -4,14 +4,11 @@ import Quote from './Quote'
 
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
-        <div className="logo">
-            <span className="icon fa-diamond"></span>
-        </div>
         <div className="content">
             <div className="inner">
                 <h1>Haiku By The Sea</h1>
                 <p>
-                    Receive a daily Haiku poem straight in your Telegram.
+                    Receive a daily Haiku poem straight in your Telegram account.
                 </p>
                 <Quote />
             </div>
