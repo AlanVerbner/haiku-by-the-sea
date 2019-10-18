@@ -21,7 +21,7 @@
 
 ## TODO
 
-- [ ] Create the landing page with a link to the telegram channel
+- Twitter Integration 
 
 ## Prerequisites
 
