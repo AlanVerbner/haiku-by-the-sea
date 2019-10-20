@@ -1,10 +1,13 @@
 'use strict';
 
-const sendTelegramMessage = require('./src/telegram');
 const doRun = require('./src/send-haiku');
+
+const telegram = require('./src/providers/telegram');
 
 const { BOTTOKEN, TELEGRAMCHANNEL, STARTDATE } = process.env;
 
-doRun(sendTelegramMessage(BOTTOKEN), TELEGRAMCHANNEL, STARTDATE)
+const providers = [telegram(BOTTOKEN, TELEGRAMCHANNEL)];
+
+doRun(providers, STARTDATE)
   .then(console.log)
   .catch(console.error);

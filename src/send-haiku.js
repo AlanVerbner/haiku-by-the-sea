@@ -2,7 +2,7 @@
 
 const moment = require('moment');
 const haikus = require('../haikus-db.json');
-const { formatHaiku, haikuIndex } = require('./haiku');
+const { haikuIndex } = require('./haiku');
 
 /**
  * As this is a super basic implementation, we don't keep updating
@@ -20,21 +20,19 @@ const getTodaysHaiku = (haikusToPick, index) => {
     return 'Blip Blop 🤖 \nSorry, I ran out of Haikus 😢';
   }
   const todaysHaiku = haikusToPick[index];
-  return formatHaiku(todaysHaiku);
+  return todaysHaiku;
 };
 
-const doRun = async (sendTelegramMessage, TELEGRAMCHANNEL, STARTDATE) => {
+const doRun = async (providers, STARTDATE) => {
   console.log('[doRun] Getting todays Haiku');
   const todaysHaiku = getTodaysHaiku(haikus, haikuIndex(STARTDATE, moment()));
   console.log('[doRun] Todays Haiky is', todaysHaiku);
-  console.log(`[doRun] Sending haiku to channel ${TELEGRAMCHANNEL}`);
-  return (
-    // eslint-disable-next-line camelcase
-    sendTelegramMessage(TELEGRAMCHANNEL, todaysHaiku, {
-      // eslint-disable-next-line camelcase
-      parse_mode: 'HTML'
-    })
-  );
+  const results = providers.map(provider => {
+    console.log(`[doRun] Sending haiku to provider ${provider.name}`);
+    return provider.sendHaiku(provider.formatHaiku(todaysHaiku));
+  });
+  // TODO: We are not retrying a failed provider
+  return Promise.all(results);
 };
 
 module.exports = doRun;
