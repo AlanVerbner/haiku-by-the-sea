@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "moment": "2.24.0",
-    "telegraf": "3.32.0"
+    "telegraf": "3.32.0",
+    "twit": "2.2.11"
   }
 }

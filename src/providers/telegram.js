@@ -24,7 +24,7 @@ const twitterLink = haiku => {
 const formatHaiku = haiku =>
   `${haiku}\n<a href="${twitterLink(haiku)}">Share on Twitter</a>`;
 
-const sendHaikuFn = (BOTTOKEN, TELEGRAMCHANNEL, sendTelegramMessage) => {
+const sendHaikuFn = ({ BOTTOKEN, TELEGRAMCHANNEL, sendTelegramMessage }) => {
   const bot = new Telegraf(BOTTOKEN);
 
   return todaysHaiku => {
@@ -40,11 +40,10 @@ const sendHaikuFn = (BOTTOKEN, TELEGRAMCHANNEL, sendTelegramMessage) => {
   };
 };
 
-const config = (BOTTOKEN, TELEGRAMCHANNEL, sendTelegramMessage) => ({
+const config = params => ({
   name: 'Telegram',
-  sendHaiku: sendHaikuFn(BOTTOKEN, TELEGRAMCHANNEL, sendTelegramMessage),
+  sendHaiku: sendHaikuFn(params),
   formatHaiku
 });
 
-module.exports = (BOTTOKEN, TELEGRAMCHANNEL, sendTelegramMessage) =>
-  config(BOTTOKEN, TELEGRAMCHANNEL, sendTelegramMessage);
+module.exports = params => config(params);

@@ -4,7 +4,8 @@
     "quotes": ["error", "single"],
     "arrow-parens": "off",
     "no-console": "off",
-    "space-before-function-paren": "off"
+    "space-before-function-paren": "off",
+    "max-nested-callbacks": ["error", 5]
   },
   "env": {
     "node": true,
