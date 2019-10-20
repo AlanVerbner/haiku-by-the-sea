@@ -2,8 +2,10 @@
   "env": {
     "BOTTOKEN": "@bottoken",
     "TELEGRAMCHANNEL": "@telegramchannel",
-    "STARTDATE": "@startdate"
+    "STARTDATE": "@startdate",
+    "CONSUMERKEY": "@consumerkey",
+    "CONSUMERSECRET": "@consumersecret",
+    "ACCESSTOKENKEY": "@accesstokenkey",
+    "ACCESSTOKENSECRET": "$accesstokensecret"
   }
 }
-
-
