@@ -19,10 +19,6 @@
 
 ### 🏠 [Homepage](https://alanverbner.github.io/haiku-by-the-sea)
 
-## TODO
-
-- Twitter Integration 
-
 ## Prerequisites
 
 - npm >=5.5.0
