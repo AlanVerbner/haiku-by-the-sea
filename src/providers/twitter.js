@@ -29,8 +29,6 @@ const sendHaikuFn = ({
     access_token_secret: ACCESSTOKENSECRET
   });
 
-  console.log(client);
-
   return todaysHaiku => {
     const send = sendTwitterMessage
       ? sendTwitterMessage

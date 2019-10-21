@@ -6,6 +6,6 @@
     "CONSUMERKEY": "@consumerkey",
     "CONSUMERSECRET": "@consumersecret",
     "ACCESSTOKENKEY": "@accesstokenkey",
-    "ACCESSTOKENSECRET": "$accesstokensecret"
+    "ACCESSTOKENSECRET": "@accesstokensecret"
   }
 }
