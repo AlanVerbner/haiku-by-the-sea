@@ -1,12 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Quote from './Quote'
+import Logo from '../images/haiku-logo.inline.svg'
 
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
         <div className="content">
             <div className="inner">
-                <h1>Haiku By The Sea</h1>
+                <span id="haiku-logo">
+                    <Logo/>
+                </span>
                 <p>
                     Receive a daily Haiku poem straight in your Telegram account.
                 </p>

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Haiku By The Sea",
-    author: "Hunter Chang",
-    description: "A Gatsby.js V2 Starter based on Dimension by HTML5 UP"
+    title: 'Haiku By The Sea',
+    author: 'Hunter Chang',
+    description: 'A Gatsby.js V2 Starter based on Dimension by HTML5 UP',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -18,8 +18,16 @@ module.exports = {
         // icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.inline\.svg$/,
+        },
+      },
+    },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
   ],
-  pathPrefix: "/haiku-by-the-sea"
+  pathPrefix: '/haiku-by-the-sea',
 }
