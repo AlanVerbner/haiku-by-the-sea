@@ -41,7 +41,7 @@
     "node": ">=10.0.0"
   },
   "dependencies": {
-    "moment": "2.24.0",
+    "moment": "2.29.4",
     "telegraf": "3.32.0",
     "twit": "2.2.11"
   }
